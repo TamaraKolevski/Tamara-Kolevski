@@ -33,16 +33,20 @@ student = {
 console.log(student);
 
 
-
-
-
 function testFn() {
-    return 'Test fn initiated';
+    console.log('a:', a);
+    console.log('b:', b);
+    return 'Test ';
 }
 
 console.log(testFn());
-let test_fn = testFn();
+let test_fn = testFn(a, b);
+console.log(test_fn);
 
+const testFn1 = () => {
+    console.log('test fn initiated. This is an arrow function');
+}
 
+testFn1();
 
 
